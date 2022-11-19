@@ -1,6 +1,6 @@
 {
   "name": "esbuild-resolve-config",
-  "version": "1.0.4-beta.1",
+  "version": "1.0.4-beta.2",
   "description": "A tool to resolve the {.js,.ts} config by esbuild",
   "main": "./dist/esm/index.js",
   "exports": {
