@@ -1,0 +1,32 @@
+{
+  "name": "esbuild-resolve-config",
+  "version": "1.0.0",
+  "description": "A tool to resolve the {.js,.ts} config by esbuild",
+  "main": "./dist/esm/index.js",
+  "exports": {
+    ".": {
+      "import": "./dist/esm/index.js",
+      "require": "./dist/cjs/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "types": "./dist/esm/index.d.ts",
+  "scripts": {
+    "dev": "father dev",
+    "build": "father build",
+    "test": "vitest run",
+    "prettier": "pretty-quick --staged",
+    "prepublishOnly": "npm run test && npm run build"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [],
+  "author": "wyy.xb@qq.com",
+  "license": "ISC",
+  "dependencies": {
+    "esbuild": "^0.15.14",
+    "lodash": "^4.17.21",
+    "pirates": "^4.0.5"
+  }
+}
