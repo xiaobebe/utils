@@ -1,6 +1,7 @@
 {
-  "version": "1.0.1-beta.1",
+  "version": "1.0.1-beta.2",
   "description": "The utils package",
+  "packageManager": "pnpm@7.15.0",
   "scripts": {
     "preinstall": "npx only-allow pnpm",
     "dev": "pnpm -r --parallel --filter='./packages/*' run dev",
