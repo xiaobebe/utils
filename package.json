@@ -1,5 +1,5 @@
 {
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "The utils package",
   "packageManager": "pnpm@7.15.0",
   "scripts": {
