@@ -21,6 +21,10 @@
   "files": [
     "dist"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+git@github.com:xiaobebe/utils.git"
+  },
   "keywords": [],
   "author": "wyy.xb@qq.com",
   "license": "ISC",
