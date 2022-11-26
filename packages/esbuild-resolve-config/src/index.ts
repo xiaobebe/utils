@@ -24,7 +24,7 @@ export function getCorrectConfigFile(filePath: string): string | null {
 /**
  * @param configFile xx.config -> xx.config.ts, xx.config.js, xx.config.mjs
  */
-export default function resolveConfigByEsbuild<T extends Record<string, any>>(
+export function resolveConfig<T extends Record<string, any>>(
   configFile: string,
   options?: { defaultConfig?: T }
 ) {
@@ -55,3 +55,5 @@ export default function resolveConfigByEsbuild<T extends Record<string, any>>(
 
   return config;
 }
+
+export default resolveConfig;
