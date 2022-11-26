@@ -28,10 +28,11 @@ export default function resolveConfigByEsbuild<T extends Record<string, any>>(
   configFile: string,
   options?: { defaultConfig?: T }
 ) {
-  const resolvedPath = getCorrectConfigFile(configFile);
+  let resolvedPath = getCorrectConfigFile(configFile);
   if (!resolvedPath) {
     return null;
   }
+  resolvedPath = path.resolve(process.cwd(), resolvedPath);
   register.register({
     implementor: esbuild,
   });
