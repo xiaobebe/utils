@@ -28,6 +28,14 @@ importers:
       lodash: 4.17.21
       pirates: 4.0.5
 
+  packages/ts-alias:
+    specifiers:
+      '@umijs/utils': ^4.0.33
+      tsconfig-paths: ^4.1.0
+    dependencies:
+      '@umijs/utils': 4.0.33
+      tsconfig-paths: 4.1.0
+
 packages:
 
   /@ampproject/remapping/2.2.0:
@@ -925,6 +933,13 @@ packages:
       pino: 7.11.0
     dev: true
 
+  /@umijs/utils/4.0.33:
+    resolution: {integrity: sha512-J71vygg1KPlI3rri93Dq5rJy0+wjs2ytxACjSeGwMsiuDYBqyC1EmTAWirqM7H58jWA8h6BItZLUzpPZjoot6Q==, tarball: '@umijs/utils/download/@umijs/utils-4.0.33.tgz'}
+    dependencies:
+      chokidar: 3.5.3
+      pino: 7.11.0
+    dev: false
+
   /@vercel/ncc/0.33.3:
     resolution: {integrity: sha512-JGZ11QV+/ZcfudW2Cz2JVp54/pJNXbsuWRgSh2ZmmZdQBKXqBtIGrwI1Wyx8nlbzAiEFe7FHi4K1zX4//jxTnQ==, tarball: '@vercel/ncc/download/@vercel/ncc-0.33.3.tgz'}
     hasBin: true
@@ -979,7 +994,6 @@ packages:
     dependencies:
       normalize-path: 3.0.0
       picomatch: 2.3.1
-    dev: true
 
   /argparse/1.0.10:
     resolution: {integrity: sha1-vNZ5HqWuCXJeF+WtmIE0zUCz2RE=, tarball: argparse/download/argparse-1.0.10.tgz}
@@ -1025,7 +1039,6 @@ packages:
   /atomic-sleep/1.0.0:
     resolution: {integrity: sha1-64W3emAfyTLP5DLFrNNkqeLJB1s=, tarball: atomic-sleep/download/atomic-sleep-1.0.0.tgz}
     engines: {node: '>=8.0.0'}
-    dev: true
 
   /autoprefixer/10.4.13_postcss@8.4.19:
     resolution: {integrity: sha512-49vKpMqcZYsJjwotvt4+h/BCjJVnhGwcLpDt5xkcaOG3eLrG/HUYLagrihYsQ+qrIBgIzX1Rw7a6L8I/ZA1Atg==, tarball: autoprefixer/download/autoprefixer-10.4.13.tgz}
@@ -1092,7 +1105,6 @@ packages:
   /binary-extensions/2.2.0:
     resolution: {integrity: sha1-dfUC7q+f/eQvyYgpZFvk6na9ni0=, tarball: binary-extensions/download/binary-extensions-2.2.0.tgz}
     engines: {node: '>=8'}
-    dev: true
 
   /bn.js/4.12.0:
     resolution: {integrity: sha1-d1s/J477uXGO7HNh9IP7Nvu/6og=, tarball: bn.js/download/bn.js-4.12.0.tgz}
@@ -1118,7 +1130,6 @@ packages:
     engines: {node: '>=8'}
     dependencies:
       fill-range: 7.0.1
-    dev: true
 
   /brorand/1.1.0:
     resolution: {integrity: sha1-EsJe/kCkXjwyPrhnWgoM5XsiNx8=, tarball: brorand/download/brorand-1.1.0.tgz}
@@ -1308,7 +1319,6 @@ packages:
       readdirp: 3.6.0
     optionalDependencies:
       fsevents: 2.3.2
-    dev: true
 
   /cipher-base/1.0.4:
     resolution: {integrity: sha1-h2Dk7MJy9MNjUy+SbYdKriwTl94=, tarball: cipher-base/download/cipher-base-1.0.4.tgz}
@@ -1663,7 +1673,6 @@ packages:
       inherits: 2.0.4
       readable-stream: 3.6.0
       stream-shift: 1.0.1
-    dev: true
 
   /electron-to-chromium/1.4.284:
     resolution: {integrity: sha512-M8WEXFuKXMYMVr45fo8mq0wUrrJHheiKZf6BArTKk9ZBYCKJEOU5H8cdWgDT+qCVZf7Na4lVUaZsA+h6uA9+PA==, tarball: electron-to-chromium/download/electron-to-chromium-1.4.284.tgz}
@@ -1690,7 +1699,6 @@ packages:
     resolution: {integrity: sha1-WuZKX0UFe682JuwU2gyl5LJDHrA=, tarball: end-of-stream/download/end-of-stream-1.4.4.tgz}
     dependencies:
       once: 1.4.0
-    dev: true
 
   /enhanced-resolve/5.9.3:
     resolution: {integrity: sha512-Bq9VSor+kjvW3f9/MiiR4eE3XYgOl7/rS8lnSxbRbF3kS0B2r+Y9w5krBWxZgDxASVZbdYrn5wT4j/Wb0J9qow==, tarball: enhanced-resolve/download/enhanced-resolve-5.9.3.tgz}
@@ -2233,7 +2241,6 @@ packages:
   /fast-redact/3.1.2:
     resolution: {integrity: sha512-+0em+Iya9fKGfEQGcd62Yv6onjBmmhV1uh86XVfOU8VwAe6kaFdQCWI9s0/Nnugx5Vd9tdbZ7e6gE2tR9dzXdw==, tarball: fast-redact/download/fast-redact-3.1.2.tgz}
     engines: {node: '>=6'}
-    dev: true
 
   /fastq/1.13.0:
     resolution: {integrity: sha1-YWdg+Ip1Jr38WWt8q4wYk4w2uYw=, tarball: fastq/download/fastq-1.13.0.tgz}
@@ -2287,7 +2294,6 @@ packages:
     engines: {node: '>=8'}
     dependencies:
       to-regex-range: 5.0.1
-    dev: true
 
   /find-babel-config/1.2.0:
     resolution: {integrity: sha1-qbezF+tbmGDNqdVHQKjIM3oig6I=, tarball: find-babel-config/download/find-babel-config-1.2.0.tgz}
@@ -2382,11 +2388,10 @@ packages:
     dev: true
 
   /fsevents/2.3.2:
-    resolution: {integrity: sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==}
+    resolution: {integrity: sha1-ilJveLj99GI7cJ4Ll1xSwkwC/Ro=, tarball: fsevents/download/fsevents-2.3.2.tgz}
     engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
     os: [darwin]
     requiresBuild: true
-    dev: true
     optional: true
 
   /function-bind/1.1.1:
@@ -2444,7 +2449,6 @@ packages:
     engines: {node: '>= 6'}
     dependencies:
       is-glob: 4.0.3
-    dev: true
 
   /glob/7.2.3:
     resolution: {integrity: sha512-nFR0zLpU2YCaRxwoCJvL6UvCH2JFyFVIvwTLsIf21AuHlMskA1hhTdk+LlYJtOlYt9v6dvszD2BGRqBL+iQK9Q==, tarball: glob/download/glob-7.2.3.tgz}
@@ -2620,7 +2624,6 @@ packages:
 
   /inherits/2.0.4:
     resolution: {integrity: sha1-D6LGT5MpF8NDOg3tVTY6rjdBa3w=, tarball: inherits/download/inherits-2.0.4.tgz}
-    dev: true
 
   /internal-slot/1.0.3:
     resolution: {integrity: sha1-c0fjB97uovqsKsYgXUvH00ln9Zw=, tarball: internal-slot/download/internal-slot-1.0.3.tgz}
@@ -2668,7 +2671,6 @@ packages:
     engines: {node: '>=8'}
     dependencies:
       binary-extensions: 2.2.0
-    dev: true
 
   /is-boolean-object/1.1.2:
     resolution: {integrity: sha1-XG3CACRt2TIa5LiFoRS7H3X2Nxk=, tarball: is-boolean-object/download/is-boolean-object-1.1.2.tgz}
@@ -2726,7 +2728,6 @@ packages:
   /is-extglob/2.1.1:
     resolution: {integrity: sha1-qIwCU1eR8C7TfHahueqXc8gz+MI=, tarball: is-extglob/download/is-extglob-2.1.1.tgz}
     engines: {node: '>=0.10.0'}
-    dev: true
 
   /is-finalizationregistry/1.0.2:
     resolution: {integrity: sha1-yHSbZfF8EzMT5mGxKJuVrT29YuY=, tarball: is-finalizationregistry/download/is-finalizationregistry-1.0.2.tgz}
@@ -2746,7 +2747,6 @@ packages:
     engines: {node: '>=0.10.0'}
     dependencies:
       is-extglob: 2.1.1
-    dev: true
 
   /is-map/2.0.2:
     resolution: {integrity: sha1-AJItuMm/c+gbejNYJ7wqQ/K5ESc=, tarball: is-map/download/is-map-2.0.2.tgz}
@@ -2767,7 +2767,6 @@ packages:
   /is-number/7.0.0:
     resolution: {integrity: sha1-dTU0W4lnNNX4DE0GxQlVUnoU8Ss=, tarball: is-number/download/is-number-7.0.0.tgz}
     engines: {node: '>=0.12.0'}
-    dev: true
 
   /is-regex/1.1.4:
     resolution: {integrity: sha1-7vVmPNWfpMCuM5UFMj32hUuxWVg=, tarball: is-regex/download/is-regex-1.1.4.tgz}
@@ -2886,7 +2885,6 @@ packages:
     resolution: {integrity: sha512-1hqLFMSrGHRHxav9q9gNjJ5EXznIxGVO09xQRrwplcS8qs28pZ8s8hupZAmqDwZUmVZ2Qb2jnyPOWcDH8m8dlA==, tarball: json5/download/json5-2.2.1.tgz}
     engines: {node: '>=6'}
     hasBin: true
-    dev: true
 
   /jsonfile/4.0.0:
     resolution: {integrity: sha1-h3Gq4HmbZAdrdmQPygWPnBDjPss=, tarball: jsonfile/download/jsonfile-4.0.0.tgz}
@@ -3053,7 +3051,6 @@ packages:
 
   /minimist/1.2.7:
     resolution: {integrity: sha512-bzfL1YUZsP41gmu/qjrEk0Q6i2ix/cVeAhbCbqH9u3zYutS1cLg00qhrD0M2MVdCcx4Sc0UpP2eBWo9rotpq6g==, tarball: minimist/download/minimist-1.2.7.tgz}
-    dev: true
 
   /mri/1.2.0:
     resolution: {integrity: sha1-ZyFID+wqEaSImGERWki2y+fMjws=, tarball: mri/download/mri-1.2.0.tgz}
@@ -3116,7 +3113,6 @@ packages:
   /normalize-path/3.0.0:
     resolution: {integrity: sha1-Dc1p/yOhybEf0JeDFmRKA4ghamU=, tarball: normalize-path/download/normalize-path-3.0.0.tgz}
     engines: {node: '>=0.10.0'}
-    dev: true
 
   /normalize-range/0.1.2:
     resolution: {integrity: sha1-LRDAa9/TEuqXd2laTShDlFa3WUI=, tarball: normalize-range/download/normalize-range-0.1.2.tgz}
@@ -3185,13 +3181,11 @@ packages:
 
   /on-exit-leak-free/0.2.0:
     resolution: {integrity: sha1-s5yeO/dpDYkPSGFViw17kKRC0gk=, tarball: on-exit-leak-free/download/on-exit-leak-free-0.2.0.tgz}
-    dev: true
 
   /once/1.4.0:
     resolution: {integrity: sha1-WDsap3WWHUsROsF9nFC6753Xa9E=, tarball: once/download/once-1.4.0.tgz}
     dependencies:
       wrappy: 1.0.2
-    dev: true
 
   /onetime/5.1.2:
     resolution: {integrity: sha1-0Oluu1awdHbfHdnEgG5SN5hcpF4=, tarball: onetime/download/onetime-5.1.2.tgz}
@@ -3335,18 +3329,15 @@ packages:
   /picomatch/2.3.1:
     resolution: {integrity: sha512-JU3teHTNjmE2VCGFzuY8EXzCDVwEqB2a8fsIvwaStHhAWJEeVd1o1QD80CU6+ZdEXXSLbSsuLwJjkCBWqRQUVA==, tarball: picomatch/download/picomatch-2.3.1.tgz}
     engines: {node: '>=8.6'}
-    dev: true
 
   /pino-abstract-transport/0.5.0:
     resolution: {integrity: sha1-S1Q0jY9zcTv9FOPcRCKHOaoT2cA=, tarball: pino-abstract-transport/download/pino-abstract-transport-0.5.0.tgz}
     dependencies:
       duplexify: 4.1.2
       split2: 4.1.0
-    dev: true
 
   /pino-std-serializers/4.0.0:
     resolution: {integrity: sha1-F5HM0lOcCRrknOmZMgXizV27oeI=, tarball: pino-std-serializers/download/pino-std-serializers-4.0.0.tgz}
-    dev: true
 
   /pino/7.11.0:
     resolution: {integrity: sha512-dMACeu63HtRLmCG8VKdy4cShCPKaYDR4youZqoSWLxl5Gu99HUw8bw75thbPv9Nip+H+QYX8o3ZJbTdVZZ2TVg==, tarball: pino/download/pino-7.11.0.tgz}
@@ -3363,7 +3354,6 @@ packages:
       safe-stable-stringify: 2.4.1
       sonic-boom: 2.8.0
       thread-stream: 0.15.2
-    dev: true
 
   /pirates/4.0.5:
     resolution: {integrity: sha512-8V9+HQPupnaXMA23c5hvl69zXvTwTzyAYasnkb0Tts4XvO4CliqONMOnvlq26rkhLC3nWDFBJf73LU1e1VZLaQ==, tarball: pirates/download/pirates-4.0.5.tgz}
@@ -3804,7 +3794,6 @@ packages:
 
   /process-warning/1.0.0:
     resolution: {integrity: sha512-du4wfLyj4yCZq1VupnVSZmRsPJsNuxoDQFdCFHLaYiEbFBD7QE0a+I4D7hOxrVnh78QE/YipFAj9lXHiXocV+Q==, tarball: process-warning/download/process-warning-1.0.0.tgz}
-    dev: true
 
   /process/0.11.10:
     resolution: {integrity: sha1-czIwDoQBYb2j5podHZGn1LwW8YI=, tarball: process/download/process-0.11.10.tgz}
@@ -3871,7 +3860,6 @@ packages:
 
   /quick-format-unescaped/4.0.4:
     resolution: {integrity: sha1-k+9t2NNFPLx5cN1hT61MWVTWtac=, tarball: quick-format-unescaped/download/quick-format-unescaped-4.0.4.tgz}
-    dev: true
 
   /ramda/0.28.0:
     resolution: {integrity: sha512-9QnLuG/kPVgWvMQ4aODhsBUFKOUmnbUnsSXACv+NCQZcHbeb+v8Lodp8OVxtRULN1/xOyYLLaL6npE6dMq5QTA==, tarball: ramda/download/ramda-0.28.0.tgz}
@@ -3918,19 +3906,16 @@ packages:
       inherits: 2.0.4
       string_decoder: 1.3.0
       util-deprecate: 1.0.2
-    dev: true
 
   /readdirp/3.6.0:
     resolution: {integrity: sha1-dKNwvYVxFuJFspzJc0DNQxoCpsc=, tarball: readdirp/download/readdirp-3.6.0.tgz}
     engines: {node: '>=8.10.0'}
     dependencies:
       picomatch: 2.3.1
-    dev: true
 
   /real-require/0.1.0:
     resolution: {integrity: sha1-c2rCFMqiBjKEe3yowQVqB2ffk4E=, tarball: real-require/download/real-require-0.1.0.tgz}
     engines: {node: '>= 12.13.0'}
-    dev: true
 
   /reflect.getprototypeof/1.0.3:
     resolution: {integrity: sha512-TTAOZpkJ2YLxl7mVHWrNo3iDMEkYlva/kgFcXndqMgbo/AZUmmavEkdXV+hXtE4P8xdyEKRzalaFqZVuwIk/Nw==, tarball: reflect.getprototypeof/download/reflect.getprototypeof-1.0.3.tgz}
@@ -4031,7 +4016,6 @@ packages:
 
   /safe-buffer/5.2.1:
     resolution: {integrity: sha1-Hq+fqb2x/dTsdfWPnNtOa3gn7sY=, tarball: safe-buffer/download/safe-buffer-5.2.1.tgz}
-    dev: true
 
   /safe-regex-test/1.0.0:
     resolution: {integrity: sha512-JBUUzyOgEwXQY1NuPtvcj/qcBDbDmEvWufhlnXZIm75DEHp+afM1r1ujJpJsV/gSM4t59tpDyPi1sd6ZaPFfsA==, tarball: safe-regex-test/download/safe-regex-test-1.0.0.tgz}
@@ -4044,7 +4028,6 @@ packages:
   /safe-stable-stringify/2.4.1:
     resolution: {integrity: sha512-dVHE6bMtS/bnL2mwualjc6IxEv1F+OCUpA46pKUj6F8uDbUM0jCCulPqRNPSnWwGNKx5etqMjZYdXtrm5KJZGA==, tarball: safe-stable-stringify/download/safe-stable-stringify-2.4.1.tgz}
     engines: {node: '>=10'}
-    dev: true
 
   /safer-buffer/2.1.2:
     resolution: {integrity: sha1-RPoWGwGHuVSd2Eu5GAL5vYOFzWo=, tarball: safer-buffer/download/safer-buffer-2.1.2.tgz}
@@ -4132,7 +4115,6 @@ packages:
     resolution: {integrity: sha512-kuonw1YOYYNOve5iHdSahXPOK49GqwA+LZhI6Wz/l0rP57iKyXXIHaRagOBHAPmGwJC6od2Z9zgvZ5loSgMlVg==, tarball: sonic-boom/download/sonic-boom-2.8.0.tgz}
     dependencies:
       atomic-sleep: 1.0.0
-    dev: true
 
   /source-map-js/1.0.2:
     resolution: {integrity: sha512-R0XvVJ9WusLiqTCEiGCmICCMplcCkIwwR11mOSD9CR5u+IXYdiseeEuXCVAjS54zqwkLcPNnmU4OeJ6tUrWhDw==, tarball: source-map-js/download/source-map-js-1.0.2.tgz}
@@ -4186,7 +4168,6 @@ packages:
   /split2/4.1.0:
     resolution: {integrity: sha1-EBkHokNw+Fu3gvCK2qvk4oHs+Ak=, tarball: split2/download/split2-4.1.0.tgz}
     engines: {node: '>= 10.x'}
-    dev: true
 
   /sprintf-js/1.0.3:
     resolution: {integrity: sha1-BOaSb2YolTVPPdAVIDYzuFcpfiw=, tarball: sprintf-js/download/sprintf-js-1.0.3.tgz}
@@ -4220,7 +4201,6 @@ packages:
 
   /stream-shift/1.0.1:
     resolution: {integrity: sha1-1wiCgVWasneEJCebCHfaPDktWj0=, tarball: stream-shift/download/stream-shift-1.0.1.tgz}
-    dev: true
 
   /string-argv/0.3.1:
     resolution: {integrity: sha1-leL77AQnrhkYSTX4FtdKqkxcGdo=, tarball: string-argv/download/string-argv-0.3.1.tgz}
@@ -4253,12 +4233,10 @@ packages:
     resolution: {integrity: sha1-QvEUWUpGzxqOMLCoT1bHjD7awh4=, tarball: string_decoder/download/string_decoder-1.3.0.tgz}
     dependencies:
       safe-buffer: 5.2.1
-    dev: true
 
   /strip-bom/3.0.0:
     resolution: {integrity: sha1-IzTBjpx1n3vdVv3vfprj1YjmjtM=, tarball: strip-bom/download/strip-bom-3.0.0.tgz}
     engines: {node: '>=4'}
-    dev: true
 
   /strip-final-newline/2.0.0:
     resolution: {integrity: sha1-ibhS+y/L6Tb29LMYevsKEsGrWK0=, tarball: strip-final-newline/download/strip-final-newline-2.0.0.tgz}
@@ -4329,7 +4307,6 @@ packages:
     resolution: {integrity: sha512-UkEhKIg2pD+fjkHQKyJO3yoIvAP3N6RlNFt2dUhcS1FGvCD1cQa1M/PGknCLFIyZdtJOWQjejp7bdNqmN7zwdA==, tarball: thread-stream/download/thread-stream-0.15.2.tgz}
     dependencies:
       real-require: 0.1.0
-    dev: true
 
   /timers-browserify/2.0.12:
     resolution: {integrity: sha1-RKRcEfv0B/NPl7zNFXfGUjYbAO4=, tarball: timers-browserify/download/timers-browserify-2.0.12.tgz}
@@ -4366,7 +4343,6 @@ packages:
     engines: {node: '>=8.0'}
     dependencies:
       is-number: 7.0.0
-    dev: true
 
   /traverse/0.6.6:
     resolution: {integrity: sha1-y99WD9e5r2MlAv7UD5GMFX6pcTc=, tarball: traverse/download/traverse-0.6.6.tgz}
@@ -4379,6 +4355,15 @@ packages:
       minimist: 1.2.7
       strip-bom: 3.0.0
     dev: true
+
+  /tsconfig-paths/4.1.0:
+    resolution: {integrity: sha512-AHx4Euop/dXFC+Vx589alFba8QItjF+8hf8LtmuiCwHyI4rHXQtOOENaM8kvYf5fR0dRChy3wzWIZ9WbB7FWow==, tarball: tsconfig-paths/download/tsconfig-paths-4.1.0.tgz}
+    engines: {node: '>=6'}
+    dependencies:
+      json5: 2.2.1
+      minimist: 1.2.7
+      strip-bom: 3.0.0
+    dev: false
 
   /tty-browserify/0.0.0:
     resolution: {integrity: sha1-oVe6QC2iTpv5V/mqadUk7tQpAaY=, tarball: tty-browserify/download/tty-browserify-0.0.0.tgz}
@@ -4444,7 +4429,6 @@ packages:
 
   /util-deprecate/1.0.2:
     resolution: {integrity: sha1-RQ1Nyfpw3nMnYvvS1KKJgUGaDM8=, tarball: util-deprecate/download/util-deprecate-1.0.2.tgz}
-    dev: true
 
   /util/0.10.3:
     resolution: {integrity: sha1-evsa/lCAUkZInj23/g7TeTNqwPk=, tarball: util/download/util-0.10.3.tgz}
@@ -4624,7 +4608,6 @@ packages:
 
   /wrappy/1.0.2:
     resolution: {integrity: sha1-tSQ9jz7BqjXxNkYFvA0QNuMKtp8=, tarball: wrappy/download/wrappy-1.0.2.tgz}
-    dev: true
 
   /xtend/4.0.2:
     resolution: {integrity: sha1-u3J3n1+kZRhrH0OPZ0+jR/2121Q=, tarball: xtend/download/xtend-4.0.2.tgz}

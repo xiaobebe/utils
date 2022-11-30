@@ -1,0 +1,35 @@
+{
+  "name": "resolve-ts-alias",
+  "version": "1.0.0",
+  "description": "A library to resolve tsconfig paths to alias for webpack, vite",
+  "main": "./dist/cjs/index.js",
+  "exports": {
+    ".": {
+      "import": "./dist/esm/index.js",
+      "require": "./dist/cjs/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "types": "./dist/cjs/index.d.ts",
+  "scripts": {
+    "dev": "father dev",
+    "build": "father build",
+    "test": "vitest run",
+    "prettier": "pretty-quick --staged",
+    "prepublishOnly": "npm run build"
+  },
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+git@github.com:xiaobebe/utils.git"
+  },
+  "keywords": [],
+  "author": "wyy.xb@qq.com",
+  "license": "ISC",
+  "dependencies": {
+    "@umijs/utils": "^4.0.33",
+    "tsconfig-paths": "^4.1.0"
+  }
+}
