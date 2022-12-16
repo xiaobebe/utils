@@ -43,7 +43,7 @@ export function resolveConfig<T extends Record<string, any>>(
     config = merge(config, resolved.default ?? resolved);
   } catch (e) {
     // @ts-ignore
-    throw new Error(`Parse config file failed: [${resolvedPath}]`, {
+    throw new Error(`Parse config file failed: [${resolvedPath}], ${e.message}`, {
       cause: e,
     });
   }
