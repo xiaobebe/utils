@@ -1,15 +1,9 @@
 {
   "name": "esbuild-resolve-config",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "A tool to resolve the {.js,.ts} config by esbuild",
   "main": "./dist/cjs/index.js",
-  "exports": {
-    ".": {
-      "import": "./dist/esm/index.js",
-      "require": "./dist/cjs/index.js"
-    },
-    "./package.json": "./package.json"
-  },
+  "module": "./dist/esm/index.js",
   "types": "./dist/cjs/index.d.ts",
   "scripts": {
     "dev": "father dev",
