@@ -1,15 +1,9 @@
 {
   "name": "resolve-ts-alias",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "A library to resolve tsconfig paths to alias for webpack, vite",
   "main": "./dist/cjs/index.js",
-  "exports": {
-    ".": {
-      "import": "./dist/esm/index.js",
-      "require": "./dist/cjs/index.js"
-    },
-    "./package.json": "./package.json"
-  },
+  "module": "./dist/esm/index.js",
   "types": "./dist/cjs/index.d.ts",
   "scripts": {
     "dev": "father dev",
